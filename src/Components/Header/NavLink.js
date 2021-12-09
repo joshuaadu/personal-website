@@ -1,6 +1,5 @@
 import "./NavLink.css";
 const NavLink = (props) => {
-  console.log(props.name, props.active);
   return (
     <li
       id={props.name}
