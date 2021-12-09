@@ -12,6 +12,10 @@
   color: inherit;
 }
 
+.navlink a::first-letter {
+  text-transform: uppercase;
+}
+
 .navlink i {
   /* visibility: hidden; */
 }

@@ -1,10 +1,10 @@
 import TabBar from "./TabBar";
 const Header = (props) => {
   const headerLinks = [
-    { title: "Home", active: true },
-    { title: "Profile" },
-    { title: "Resume" },
-    { title: "Contact" }
+    { title: "home" },
+    { title: "profile" },
+    { title: "resume" },
+    { title: "contact" }
   ];
   return <TabBar links={headerLinks} />;
 };

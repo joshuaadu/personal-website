@@ -1,16 +1,11 @@
-// import { FontAwesomeIcon } from "../../@fortawesome/react-fontawesome"
-
-import { useState } from "react";
 import "./NavLink.css";
 const NavLink = (props) => {
-  const [linkIsActive, setLinkActive] = useState();
-  setLinkActive(props.active);
+  console.log(props.name, props.active);
   return (
     <li
       id={props.name}
-      className={`navlink ${linkIsActive ? "active" : ""}`}
-      key={props.name}
       onClick={props.setActive}
+      className={`navlink ${props.active ? "active" : ""}`}
     >
       <a href="#">{props.name}</a>
     </li>
