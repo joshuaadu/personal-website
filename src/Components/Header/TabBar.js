@@ -4,7 +4,10 @@ import "./TabBar.css";
 
 const TabBar = (props) => {
   const [activeTab, setActiveTab] = useState("home");
+  console.log(activeTab);
+  props.setActivePage(activeTab);
   const setLinkActive = (event) => {
+    props.setActivePage(activeTab);
     setActiveTab(event.target.textContent.trim());
   };
   return (
