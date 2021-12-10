@@ -6,7 +6,11 @@ const Header = (props) => {
     { title: "resume" },
     { title: "contact" }
   ];
-  return <TabBar links={headerLinks} setActivePage={props.setPage} />;
+  return (
+    <div>
+      <TabBar links={headerLinks} setActivePage={props.setPage} />;
+    </div>
+  );
 };
 
 export default Header;
