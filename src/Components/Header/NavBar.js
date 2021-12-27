@@ -1,8 +1,8 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
-import "./TabBar.css";
+import "./NavBar.css";
 
-const TabBar = (props) => {
+const NavBar = (props) => {
   const [activeTab, setActiveTab] = useState("home");
   console.log(activeTab);
   props.setActivePage(activeTab);
@@ -24,4 +24,4 @@ const TabBar = (props) => {
   );
 };
 
-export default TabBar;
+export default NavBar;
