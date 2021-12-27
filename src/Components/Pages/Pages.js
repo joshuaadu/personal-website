@@ -1,25 +1,7 @@
-import Home from "./Home";
-import Portfolio from "./Portfolio";
-import Resume from "./Resume";
-import Contact from "./Contact";
+import React from "react";
 
 const Pages = (props) => {
-  switch (props.page) {
-    case "home":
-      return <Home />;
-
-    case "portfolio":
-      return <Portfolio />;
-
-    case "resume":
-      return <Resume />;
-
-    case "contact":
-      return <Contact />;
-
-    default:
-      return;
-  }
+	return props.children;
 };
 
 export default Pages;

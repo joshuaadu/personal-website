@@ -1,4 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  /* max-width: 70rem; */
+  min-width: 20rem;
+  margin: 0 auto;
+  min-height: 100vh;
 }
