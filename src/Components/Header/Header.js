@@ -1,4 +1,5 @@
-import TabBar from "./TabBar";
+import { Fragment } from "react";
+import NavBar from "./NavBar";
 const Header = (props) => {
   const headerLinks = [
     { title: "home" },
@@ -7,9 +8,9 @@ const Header = (props) => {
     { title: "contact" }
   ];
   return (
-    <div>
-      <TabBar links={headerLinks} setActivePage={props.setPage} />;
-    </div>
+    <Fragment>
+      <NavBar links={headerLinks} setActivePage={props.setPage} />;
+    </Fragment>
   );
 };
 

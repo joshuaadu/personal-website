@@ -1,8 +1,11 @@
 {
-  "name": "personal-website",
+  "name": "declarative-header-pages",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Using Ryan Florence's lecture on \"Implicit State with Compound Components and cloneElement\"",
+  "keywords": [
+    "cloneelement",
+    "declarative"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "5.15.4",
