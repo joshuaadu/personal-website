@@ -1,27 +1,22 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import NavLink from "./NavLink";
 import "./NavBar.css";
 
 const NavBar = (props) => {
-	// const [activeTab, setActiveTab] = useState("home");
-	// console.log(activeTab);
-	// props.setActivePage(activeTab);
-	// const setLinkActive = (event) => {
-	// 	props.setActivePage(activeTab);
-	// 	setActiveTab(event.target.textContent.trim());
-	// };
+	const { activeIndex, selectPage } = props;
+	const children = React.Children.map(props.children, (child, index) => {
+		return React.cloneElement(child, {
+			key: child.props.children,
+			active: index === activeIndex,
+			onSelect: () => {
+				selectPage(index);
+			},
+		});
+	});
 	return (
-		<ul className="tabBar">
-			{/* {props.links.map((link) => (
-        <NavLink
-          key={link.title}
-          name={link.title}
-          active={link.title === activeTab ? true : false}
-          setActive={setLinkActive}
-        />
-      ))} */}
-			{props.children}
-		</ul>
+		<nav>
+			<ul className="tabBar">{children}</ul>
+		</nav>
 	);
 };
 

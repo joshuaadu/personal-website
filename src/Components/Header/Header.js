@@ -7,14 +7,13 @@ const Header = (props) => {
 		{ title: "resume" },
 		{ title: "contact" },
 	];
-	return props.children;
 
-	// return (
-	// 	<Fragment>
-	// 		{/* <NavBar links={headerLinks} setActivePage={props.setPage} />; */}
-	// 		{props.children}
-	// 	</Fragment>
-	// );
+	return (
+		<header className="header">
+			{/* <NavBar links={headerLinks} setActivePage={props.setPage} />; */}
+			{props.children}
+		</header>
+	);
 };
 
 export default Header;
